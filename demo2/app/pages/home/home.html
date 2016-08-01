@@ -1,0 +1,44 @@
+
+<ion-header>
+  <ion-navbar primary>
+    <button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Menus
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [content]="content">
+    <ion-toolbar>
+      <ion-title>Pages</ion-title>
+    </ion-toolbar>
+    <ion-content>
+      <ion-list>
+        <button ion-item (click)="openPage()">
+          Login
+        </button>
+        <button ion-item (click)="openPage()">
+          Signup
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+<ion-nav #content></ion-nav>
+
+<ion-content padding>
+  Componentes Ionic2
+  <p>
+    Prueba de algunos componentes usando Ionic2.
+  </p>
+  <button block menuToggle>Toggle Menu</button>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar primary>
+        <ion-title>
+            Footer
+        </ion-title>
+    </ion-toolbar>
+</ion-footer>
