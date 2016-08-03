@@ -2,12 +2,16 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
+import { disableDeprecatedForms, provideForms } from '@angular/forms';
+import { WidgetRegistry } from "angular2-schema-form";
 
 
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
+
 export class MyApp {
+
   rootPage: any = HomePage;
 
   constructor(platform: Platform) {
@@ -17,6 +21,7 @@ export class MyApp {
       StatusBar.styleDefault();
     });
   }
+
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [disableDeprecatedForms(), provideForms(), WidgetRegistry]);

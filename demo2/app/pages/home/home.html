@@ -5,34 +5,127 @@
       <ion-icon name='menu'></ion-icon>
     </button>
     <ion-title>
-      Menus
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-menu [content]="content">
-    <ion-toolbar>
-      <ion-title>Pages</ion-title>
-    </ion-toolbar>
-    <ion-content>
-      <ion-list>
-        <button ion-item (click)="openPage()">
-          Login
-        </button>
-        <button ion-item (click)="openPage()">
-          Signup
-        </button>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-<ion-nav #content></ion-nav>
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(pagina1)">
+        Pagina 1
+      </button>
+      <button ion-item (click)="openPage(pagina2)">
+        Pagina 2
+      </button>
+      <button menuClose ion-item detail-none>
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent></ion-nav>
 
 <ion-content padding>
-  Componentes Ionic2
-  <p>
-    Prueba de algunos componentes usando Ionic2.
-  </p>
-  <button block menuToggle>Toggle Menu</button>
+  <ion-grid>
+    <ion-row center>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="person"></ion-icon>
+            </button>
+            <div>LOGIN</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="settings"></ion-icon>
+            </button>
+            <div>FEATURES</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row center>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="card"></ion-icon>
+            </button>
+            <div>SHOP</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="cart"></ion-icon>
+            </button>
+            <div>CART</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row center>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="calendar"></ion-icon>
+            </button>
+            <div>CALENDAR</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="photos"></ion-icon>
+            </button>
+            <div>PHOTOS</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row center>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="call"></ion-icon>
+            </button>
+            <div>CALL US</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card>
+          <ion-card-content text-center>
+            <!-- Add card content here! -->
+            <button large>
+              <ion-icon name="text"></ion-icon>
+            </button>
+            <div>MESSAGE</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
 <ion-footer>
