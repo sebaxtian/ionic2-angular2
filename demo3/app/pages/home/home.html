@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Demo 3
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Prueba JSON Form
+  <p>
+    Generar Formularios desde un JSON Schema.
+  </p>
+  <formly-form [model]="user" [fields]="userFields">
+      <button type="submit" class="btn btn-default" (click)="submit(user)">ENVIAR</button>
+  </formly-form>
+</ion-content>
