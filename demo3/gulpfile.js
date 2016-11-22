@@ -42,10 +42,6 @@ gulp.task('watch', ['clean'], function(done){
     function(){
       gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
       gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
-<<<<<<< HEAD
-=======
-      gulpWatch('app/**/*.js', function(){ gulp.start('scripts'); });
->>>>>>> 0ef1e83780b7deb31382f3ee7f0eb53351f58ecc
       buildBrowserify({ watch: true }).on('end', done);
     }
   );
@@ -71,7 +67,23 @@ gulp.task('build', ['clean'], function(done){
 gulp.task('sass', buildSass);
 gulp.task('html', copyHTML);
 gulp.task('fonts', copyFonts);
-gulp.task('scripts', copyScripts);
+//gulp.task('scripts', copyScripts);
+
+gulp.task('scripts', function(){
+  return copyScripts(
+    {
+      src: [
+        'node_modules/es6-shim/es6-shim.min.js',
+        'node_modules/zone.js/dist/zone.js',
+        'node_modules/reflect-metadata/Reflect.js',
+        'node_modules/ng2-formly/bundles/ng2-formly.min.js',
+        'node_modules/systemjs/dist/system.js'
+      ],
+      dest: 'www/build/js'
+    }
+  );
+});
+
 gulp.task('clean', function(){
   return del('www/build');
 });

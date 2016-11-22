@@ -3,29 +3,19 @@
     "@angular/common": "2.0.0-rc.3",
     "@angular/compiler": "2.0.0-rc.3",
     "@angular/core": "2.0.0-rc.3",
-<<<<<<< HEAD
-    "@angular/platform-browser": "2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
-    "@angular/http": "2.0.0-rc.3",
-=======
-    "@angular/forms": "^0.2.0",
     "@angular/http": "2.0.0-rc.3",
     "@angular/platform-browser": "2.0.0-rc.3",
     "@angular/platform-browser-dynamic": "2.0.0-rc.3",
->>>>>>> 0ef1e83780b7deb31382f3ee7f0eb53351f58ecc
     "es6-shim": "^0.35.0",
     "ionic-angular": "2.0.0-beta.10",
     "ionic-native": "1.3.2",
     "ionicons": "3.0.0",
+    "ng2-formly": "^2.0.0-beta.5",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
-    "angular2-schema-form": "^1.0.0-alpha.16",
->>>>>>> 0ef1e83780b7deb31382f3ee7f0eb53351f58ecc
     "del": "2.2.0",
     "gulp": "3.9.1",
     "gulp-watch": "4.3.5",
@@ -35,16 +25,11 @@
     "ionic-gulp-sass-build": "^1.0.0",
     "ionic-gulp-scripts-copy": "^2.0.0",
     "ionic-gulp-tslint": "^1.0.0",
-<<<<<<< HEAD
     "tslint-ionic-rules": "^0.0.3",
     "run-sequence": "1.1.5"
-=======
-    "run-sequence": "1.1.5",
-    "tslint-ionic-rules": "^0.0.3"
->>>>>>> 0ef1e83780b7deb31382f3ee7f0eb53351f58ecc
   },
-  "name": "demo2",
-  "description": "demo2: An Ionic project",
+  "name": "demo3",
+  "description": "demo3: An Ionic project",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
