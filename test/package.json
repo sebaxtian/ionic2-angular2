@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:watch": "ionic-app-scripts watch"
   },
   "dependencies": {
     "@angular/common": "2.1.1",
@@ -36,6 +36,12 @@
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": [],
+  "cordovaPlatforms": [
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    }
+  ],
   "description": "test: An Ionic project"
 }

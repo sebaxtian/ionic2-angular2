@@ -15,6 +15,11 @@ export class HomePage {
      * 
      * But running on 'ionic run android -lc' or 'ionic run android' --livereload --consolelogs'
      * not work display console logs on android device.
+     * 
+     * [SOLVED]
+     * Change in the package.json file:
+     * Replace: "ionic:serve": "ionic-app-scripts serve"
+     * With: "ionic:watch": "ionic-app-scripts watch"
      */
     console.log('Constructor Home Page');
   }
@@ -26,6 +31,11 @@ export class HomePage {
      * 
      * But running on 'ionic run android -lc' or 'ionic run android' --livereload --consolelogs'
      * not work display console logs on android device. Event click button.
+     * 
+     * [SOLVED]
+     * Change in the package.json file:
+     * Replace: "ionic:serve": "ionic-app-scripts serve"
+     * With: "ionic:watch": "ionic-app-scripts watch"
      */
     console.log('Click on button Test Console Log');
   }
